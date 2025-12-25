@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Racing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Luxury Car Racing</h1>
+        <div id="car-selection" class="screen">
+            <h2>Choose Your Car</h2>
+            <div class="car-option" data-car="luxor">
+                <h3>Luxor V8</h3>
+                <p>High speed, low acceleration</p>
+            </div>
+            <div class="car-option" data-car="aether">
+                <h3>Aether GT</h3>
+                <p>Balanced speed and acceleration</p>
+            </div>
+            <div class="car-option" data-car="quantum">
+                <h3>Quantum R</h3>
+                <p>Low speed, high acceleration</p>
+            </div>
+        </div>
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        <div id="game-over" class="screen hidden">
+            <h2>Game Over</h2>
+            <p id="final-score">Score: 0</p>
+            <button id="restart-btn">Restart</button>
+        </div>
+        <div id="controls">
+            <p>Use arrow keys to move (or swipe on mobile).</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
